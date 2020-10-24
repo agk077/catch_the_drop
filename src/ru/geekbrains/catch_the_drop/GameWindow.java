@@ -13,7 +13,6 @@ public class GameWindow extends JFrame {
     private static Image background;
     private static Image gameover;
     private static Image drop;
-
     private static float drop_left = 200;
     private static float drop_top = -100;
     private static float drop_v = 200;
@@ -43,7 +42,7 @@ public class GameWindow extends JFrame {
                 if(is_drop) {
                     drop_top = -100;
                     drop_left = (int) (Math.random() * (game_field.getWidth() - drop.getWidth(null)));
-                    drop_v += 20;
+                    drop_v += 25;
                     score++;
                     game_window.setTitle("Score: " + score);
                 }
